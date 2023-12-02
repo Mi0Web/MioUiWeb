@@ -47,8 +47,9 @@ main {
 
 /* TabBar Css */
 ul {
+  position: sticky;
   list-style-type: none;
-  padding: 0;
+  padding: 0 3px 0 0;
   margin: 50px 0 0 0;
   overflow: hidden;
   background-color: #333;
@@ -60,7 +61,7 @@ ul {
   color: white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   font-size: 16px;
 }
 
@@ -99,13 +100,15 @@ li a:hover {
   padding: 6px;
   color: #fff;
   border-radius: 35px;
-  min-width: 160px;
+  min-width: 5px;
   z-index: 1;
   transform: translateX(0px);
   place-content: unset;
 }
 
 .drop-content a {
+  transform-style: initial;
+  transition-duration: 2s;
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -114,7 +117,7 @@ li a:hover {
 }
 
 .drop:hover .drop-content {
-  /* display: block; */
+  display: block;
 }
 
 /* Heading Css */
